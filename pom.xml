@@ -22,7 +22,7 @@
         <lombok.version>1.18.16</lombok.version>
         <junit-jupiter.version>5.6.0</junit-jupiter.version>
         <assertj.version>3.18.1</assertj.version>
-        <jakarta.enterprise.cdi-api.version>3.0.0</jakarta.enterprise.cdi-api.version>
+        <jakarta.enterprise.cdi-api.version>3.0.1</jakarta.enterprise.cdi-api.version>
         <jakarta.persistence-api.version>3.0.0</jakarta.persistence-api.version>
         <jakarta.transaction-api.version>2.0.0</jakarta.transaction-api.version>
         <jakarta.ws.rs-api.version>2.1.6</jakarta.ws.rs-api.version>
@@ -90,12 +90,6 @@
                 <scope>compile</scope>
             </dependency>
             <dependency>
-                <groupId>org.glassfish.jersey.core</groupId>
-                <artifactId>jersey-server</artifactId>
-                <version>${glassfish.test.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
                 <version>${validation-api.version}</version>
@@ -104,6 +98,11 @@
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
                 <version>${jaxb-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.activation</groupId>
+                <artifactId>activation</artifactId>
+                <version>1.1.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
